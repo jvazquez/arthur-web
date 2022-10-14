@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  arthur_web:
+    image: arthur-api:latest
+    container_name: arthur-web
+    volumes:
+      - ./:/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+networks:
+  default:
+    external:
+      name: arthur_network
+  
