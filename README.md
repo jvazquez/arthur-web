@@ -55,3 +55,7 @@ The Dockerfile CMD part has the profile and gunicorn run.
 I added hooks `-c hooks_config.py` [here is the documentation](https://docs.gunicorn.org/en/stable/settings.html#server-hooks)
 To show when a worker starts, reloads, it's just an example,
 but you guys can use it on your heroku
+
+## How do I stop this thing?
+
+On your host, type docker-compose down and it will stop the running project
